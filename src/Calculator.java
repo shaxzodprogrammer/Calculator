@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.awt.event.*;
 
-public class Calculator implements ActionListener {
+class calculator implements ActionListener {
     int c, n;
     String s1, s2, s3, s4, s5;
     Frame frame;
@@ -10,7 +10,7 @@ public class Calculator implements ActionListener {
     TextField tf;
     GridLayout g;
 
-    Calculator() {
+    calculator() {
         frame = new Frame("My calculator");
         panel = new Panel();
         frame.setLayout(new FlowLayout());

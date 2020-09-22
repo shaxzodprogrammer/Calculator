@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.awt.event.*;
 
-public class Calculator implements ActionListener {
+class Calculator implements ActionListener {
     String s1, s2, s3, s4, s5;
     int c, n;
     Frame frame = new Frame("Calculator");
