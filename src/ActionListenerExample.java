@@ -9,7 +9,6 @@ class ActionListenerExample implements ActionListener {
     Button button0, button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11, button12, button13;
     Panel panel = new Panel();
     GridLayout grid = new GridLayout(3, 2, 10, 20);
-
     ActionListenerExample() {
         addingButton(button0, "0");
         addingButton(button1, "1");
@@ -67,13 +66,11 @@ class ActionListenerExample implements ActionListener {
         }
 
     }
-
     void addingButton(Button button, String buttonLabel) {
         button = new Button(buttonLabel);
         button.addActionListener(this);
         panel.add(button);
     }
-
     void addNumberToActionPerfomer(Button button, String label, ActionEvent e) {
         if (e.getSource() == button) {
             s3 = textField.getText();
@@ -82,7 +79,6 @@ class ActionListenerExample implements ActionListener {
             textField.setText(s5);
         }
     }
-
     void addArithmeticOperations(Button button, int c, ActionEvent e) {
         if (e.getSource() == button) {
             s1 = textField.getText();
